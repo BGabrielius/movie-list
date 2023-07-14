@@ -1,0 +1,35 @@
+.header {
+  height: 50px;
+  width: 100%;
+
+  background-image: linear-gradient(to top left, #bdc3c7, #2c3e50);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  color: #fff;
+
+  padding-left: 2em;
+  font-weight: 700;
+  font-size: 22px;
+
+  cursor: pointer;
+}
+.header span {
+  display: flex;
+  flex-direction: column;
+}
+.header span p {
+  color: #fff;
+
+  font-weight: 500;
+  font-size: 14px;
+  padding-right: 2em;
+}
+.header span b {
+  color: #fff;
+  font-size: 16px;
+}
