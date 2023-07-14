@@ -1,0 +1,43 @@
+### -- POST - create a new user
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    "name": "Tomas",
+    "password": "123",
+    "type":  "register"
+}
+
+### -- GET - get all usernames
+GET http://localhost:5000/api/users
+
+### -- GET - get user favorited movies
+GET http://localhost:5000/api/users/Gabrielius
+
+
+### -- PUT - add movie
+PUT http://localhost:5000/api/users/Gabrielius
+Content-Type: application/json
+
+    {
+        "title": "Fast X",
+        "poster_path": "/fiVW06jE7z9YnO4trhaMEdclSiC.jpg",
+        "overview": "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path. Now, they confront the most lethal opponent they've ever faced: A terrifying threat emerging from the shadows of the past who's fueled by blood revenge, and who is determined to shatter this family and destroy everything—and everyone—that Dom loves, forever.",
+        "release_date": "2023-05-17",
+        "vote_average": 7.338
+    }
+
+
+### -- DELETE - delete existing movie
+DELETE http://localhost:5000/api/users/Gabrielius/movies/Fast%20X
+Content-Type: application/json
+
+
+// Requests that are not connected with client
+
+### -- GET - get all users
+GET http://localhost:5000/api/usersT
+
+### -- DELETE - delete one user
+DELETE http://localhost:5000/api/usersT/9
+Content-Type: application/json
